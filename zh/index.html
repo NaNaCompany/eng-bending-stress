@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN" data-config="locales/zh.js"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>最大梁弯曲应力计算器 · 单位换算与公式 | NaNa Lab</title><meta name="description" content="由已知弯矩核算截面最外缘的弯曲正应力。 选择输入单位并计算规定条件下的一个值。">
+<link rel="canonical" href="https://nanalab.kr/eng-bending-stress/zh/"><meta name="robots" content="index,follow"><meta property="og:type" content="website"><meta property="og:locale" content="zh_CN"><meta property="og:title" content="最大梁弯曲应力计算器"><meta property="og:description" content="由已知弯矩核算截面最外缘的弯曲正应力。 选择输入单位并计算规定条件下的一个值。"><meta property="og:url" content="https://nanalab.kr/eng-bending-stress/zh/"><meta property="og:image" content="https://nanalab.kr/eng-bending-stress/zh/og.png"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="../icon.svg" type="image/svg+xml"><link rel="stylesheet" href="../style.css"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "最大梁弯曲应力计算器", "url": "https://nanalab.kr/eng-bending-stress/zh/", "description": "由已知弯矩核算截面最外缘的弯曲正应力。 选择输入单位并计算规定条件下的一个值。", "applicationCategory": "EducationalApplication", "operatingSystem": "Any", "inLanguage": "zh-CN", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "NaNa Lab", "url": "https://nanalab.kr/"}}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9767176956440077"
+        crossorigin="anonymous"></script>
+<script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })
+            (window, document, 'script', 'dataLayer', 'GTM-NV2WWQXB');
+    </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZYSF0173P"></script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-2ZYSF0173P');
+    </script>
+<link rel="alternate" hreflang="ko" href="https://nanalab.kr/eng-bending-stress/"><link rel="alternate" hreflang="en" href="https://nanalab.kr/eng-bending-stress/en/"><link rel="alternate" hreflang="es" href="https://nanalab.kr/eng-bending-stress/es/"><link rel="alternate" hreflang="zh-CN" href="https://nanalab.kr/eng-bending-stress/zh/"><link rel="alternate" hreflang="ja" href="https://nanalab.kr/eng-bending-stress/ja/"><link rel="alternate" hreflang="de" href="https://nanalab.kr/eng-bending-stress/de/"><link rel="alternate" hreflang="x-default" href="https://nanalab.kr/eng-bending-stress/"><meta name="twitter:title" content="最大梁弯曲应力计算器"><meta name="twitter:description" content="由已知弯矩核算截面最外缘的弯曲正应力。 选择输入单位并计算规定条件下的一个值。"><meta name="twitter:image" content="https://nanalab.kr/eng-bending-stress/zh/og.png"></head><body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NV2WWQXB" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+<a class="skip" href="#calculator">跳转到计算器</a>
+<header><a class="brand" href="https://nanalab.kr/">NaNa Lab <span aria-hidden="true">/</span> Engineering</a><span class="edition">E036 · 固体力学</span></header><nav class="language-links" aria-label="语言"><a data-language="ko" lang="ko" hreflang="ko" href=".././">한국어</a><a data-language="en" lang="en" hreflang="en" href="../en/">English</a><a data-language="es" lang="es" hreflang="es" href="../es/">Español</a><a data-language="zh" lang="zh-CN" hreflang="zh-CN" href="../zh/" aria-current="page">简体中文</a><a data-language="ja" lang="ja" hreflang="ja" href="../ja/">日本語</a><a data-language="de" lang="de" hreflang="de" href="../de/">Deutsch</a></nav>
+<main><p class="eyebrow">一个公式，一个结果</p><h1>最大梁弯曲应力计算器</h1><p class="intro">由已知弯矩核算截面最外缘的弯曲正应力。 选择输入单位并计算规定条件下的一个值。</p>
+<div class="workspace"><section class="panel"><h2>输入值</h2><form id="calculator" novalidate><div class="row"><label for="field-m">弯矩大小M</label><div class="input-pair"><input id="field-m" name="m" type="text" inputmode="decimal" value="1000" required autocomplete="off" spellcheck="false" aria-describedby="note-m"><select id="unit-m" name="unit-m" aria-label="弯矩大小M单位"><option value="Nm" selected>N·m</option><option value="Nmm">N·mm</option><option value="kNm">kN·m</option></select></div><p class="field-note" id="note-m">大于或等于零</p></div><div class="row"><label for="field-c">中性轴至最外缘的距离 c</label><div class="input-pair"><input id="field-c" name="c" type="text" inputmode="decimal" value="50" required autocomplete="off" spellcheck="false" aria-describedby="note-c"><select id="unit-c" name="unit-c" aria-label="中性轴至最外缘的距离 c单位"><option value="m">m</option><option value="cm">cm</option><option value="mm" selected>mm</option><option value="um">μm</option><option value="nm">nm</option></select></div><p class="field-note" id="note-c">换算为 SI 单位后大于零</p></div><div class="row"><label for="field-i">截面二次矩 I</label><div class="input-pair"><input id="field-i" name="i" type="text" inputmode="decimal" value="1000000" required autocomplete="off" spellcheck="false" aria-describedby="note-i"><select id="unit-i" name="unit-i" aria-label="截面二次矩 I单位"><option value="m4">m⁴</option><option value="cm4">cm⁴</option><option value="mm4" selected>mm⁴</option></select></div><p class="field-note" id="note-i">换算为 SI 单位后大于零</p></div><div class="actions"><button class="primary" type="submit">计算</button><button type="button" id="example">填入示例</button><button type="button" id="reset">清空</button></div></form><p class="local-note">计算在此浏览器中完成。支持 1.2e-3 等科学记数法。请勿使用千位分隔符。</p><noscript>计算需要 JavaScript。禁用时仍可阅读公式和适用条件。</noscript></section>
+<section id="result" class="panel output-panel" aria-labelledby="result-heading"><h2 id="result-heading">计算结果</h2><p class="result-caption">最大弯曲法向应力大小 σ_max</p><output id="result-value" class="number" form="calculator" aria-live="polite">—</output><span id="output-unit-label" class="result-unit"></span><div id="output-control"><label for="output-unit">结果显示单位</label><select id="output-unit"><option value="Pa">Pa</option><option value="kPa">kPa</option><option value="MPa" selected>MPa</option><option value="GPa">GPa</option><option value="bar">bar</option><option value="atm">atm</option></select></div><p id="status" class="status" role="status">输入数值后点击“计算”。</p><button type="button" id="copy-result" class="copy">复制结果</button><div class="formula"><span>公式</span><p>σ_max = M c / I</p></div></section></div>
+<section class="reference"><h2>适用条件</h2><p>M≥0，c,I&gt;0。假设线弹性、小应变、平截面保持平面及绕主轴弯曲。M 与 I 必须已知；不求解支反力、剪力图或挠度。</p><p class="small">显示值为浮点近似值。不计算测量不确定度或设计安全系数。</p><details><summary>公式依据与制作信息</summary><ul><li><a href="https://mechref.engr.illinois.edu/sol/bending.html" target="_blank" rel="noopener noreferrer">University of Illinois · Bending</a></li></ul><p class="small">NaNa Lab 创建了代码、描述、图标和预览图像。链接参考文献中的文本、图形和代码尚未被复制。</p><p class="small">物理常数：<a href="https://physics.nist.gov/cuu/Constants/">NIST / CODATA 2022</a>。 μ₀ 和 ε₀ 的值是测量建议值，而不是精确定义的常数。数值和精度注释位于<a href="../SOURCES.md">源记录</a>。</p><p class="small">该网站包括 Google 广告和分析以及 Cloudflare 分析。</p></details></section></main>
+<footer>© 2026 NaNa Lab · 独创的单值工程工具 · <a href="https://github.com/NaNaCompany/eng-bending-stress">源代码</a></footer><a class="more-apps" href="https://nanalab.kr/apps/">More Apps</a>
+<script type="module" src="../app.js"></script>
+<script>
+(function () {
+  function ensureBeacon() {
+    // Cloudflare may inject its beacon at the edge. Reuse that script when present.
+    if (document.querySelector('script[src*="static.cloudflareinsights.com/beacon.min.js"]')) return;
+    var beacon = document.createElement('script');
+    beacon.defer = true;
+    beacon.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+    beacon.setAttribute('data-cf-beacon', JSON.stringify({token: '9f3423bb0d034d91bbe1a12afeff2429'}));
+    document.head.appendChild(beacon);
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', ensureBeacon, {once: true});
+  else ensureBeacon();
+})();
+</script>
+</body></html>
